@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<Book>
+<h2>List Of Books</h2>
+<table>
+    <thead>
+        <tr>
+            <th>BookId</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Price</th>
+            <th>BookType</th>
+            <th>Created Date</th>
+            <th>Updated Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var bk in Model)
+        {
+            <tr>
+                <td>@bk.BookId</td>
+                <td>@bk.Title</td>
+                <td>@bk.Author</td>
+                <td>@bk.Publication</td>
+                <td>@bk.Price</td>
+                <td>@bk.BookType</td>
+                <td>@bk.Created</td>
+                <td>@bk.Updated</td>
+            </tr>
+            
+        }
+    </tbody>
+
+</table>
