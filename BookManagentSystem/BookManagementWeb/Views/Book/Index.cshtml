@@ -5,7 +5,7 @@
 }
 @model IEnumerable<Book>
 <h2>List Of Books</h2>
-<table>
+<table class="table table-bordered table-striped table-sm">
     <thead>
         <tr>
             <th>BookId</th>
@@ -36,3 +36,4 @@
     </tbody>
 
 </table>
+<a asp-action="Create" asp-controller="Book">Create New Book</a>

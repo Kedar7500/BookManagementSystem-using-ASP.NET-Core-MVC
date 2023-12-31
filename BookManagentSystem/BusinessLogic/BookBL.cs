@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer;
 using Entities;
+using Repository;
 
 namespace BusinessLogic
 {
@@ -9,6 +10,12 @@ namespace BusinessLogic
         public List<Book> getAllBooks()
         {
             return bDal.getAllBooks();
+        }
+
+        public bool AddBook(Book bk)
+        {
+           bool result=bDal.AddBook(bk);
+            return result;
         }
 
     }

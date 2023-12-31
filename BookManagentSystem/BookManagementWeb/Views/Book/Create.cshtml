@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Book
+<h2>Create New Book</h2>
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="BookId" class="form-label">Id :</label>
+        <input asp-for="BookId" class="form-control"/>
+    </div>
+    <div>
+        <label asp-for="Title" class="form-label">Title :</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Author" class="form-label">Author :</label>
+        <input asp-for="Author" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Publication" class="form-label">Publication :</label>
+        <select asp-for="Publication" class="form-label">
+            <option value="">Select Publications</option>
+            <option value="Mehta Publications</">Mehta Publications</option>
+            <option value="Mulakshar">Mulakshar</option>
+            <option value="Shree">Shree</option>
+
+        </select>
+    </div>
+    <div>
+        <label asp-for="Price" class="form-label">Price :</label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="BookType" class="form-label">BookType :</label>
+        <input type="radio" asp-for="BookType" value="E" />E Book
+        <input type="radio" asp-for="BookType" value="H" />Hard Copy
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+

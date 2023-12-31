@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Microsoft\ASP.NET Core MVC CRUD\BookManagentSystem\BookManagementWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Microsoft/ASP.NET Core MVC CRUD/BookManagentSystem/BookManagementWeb/Views/Book/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Microsoft/ASP.NET Core MVC CRUD/BookManagentSystem/BookManagementWeb/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Microsoft/ASP.NET Core MVC CRUD/BookManagentSystem/BookManagementWeb/Views/Book/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Microsoft/ASP.NET Core MVC CRUD/BookManagentSystem/BookManagementWeb/Views/Home/Index.cshtml]
