@@ -18,5 +18,22 @@ namespace BusinessLogic
             return result;
         }
 
+        public bool Update(Book bk)
+        {
+            return bDal.Update(bk);
+
+        }
+        public Book? getBook(int id)
+        {
+            return bDal.GetBook(id);
+
+        }
+
+        public Book? Delete(int BookId)
+        {
+            return bDal.Delete(BookId);
+
+        }
+
     }
 }

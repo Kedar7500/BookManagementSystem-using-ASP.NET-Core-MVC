@@ -31,5 +31,37 @@ namespace BookManagementWeb.Controllers
             return View();
             
         }
+
+        [HttpGet]
+        public IActionResult Update(int BookId)
+        {
+            Book? bk=bbl.getBook(BookId);
+            return View(bk);
+
+        }
+        [HttpPost]
+        public IActionResult Update(Book bk)
+        {
+            bool res=bbl.Update(bk);
+            if (res)
+            {
+                ViewData["msg"] = "Updated SuccesFully";
+                return View("Success", bk);
+            }
+            return View(bk);
+
+        }
+
+        public IActionResult Delete(int BookId)
+        {
+            Book bk = bbl.Delete(BookId);
+            if (bk!=null)
+            {
+                ViewData["msg"] = "Deleted SuccesFully";
+                return View("Success",bk);
+            }
+            return View("Index");
+        }
+
     }
 }
